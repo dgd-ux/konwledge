@@ -31,9 +31,3 @@
 - [回调与状态回收](./wiki/architecture/callback-and-state-recovery.md)
 - [资源处理执行器](./wiki/architecture/resource-processing-executor.md)
 - [核心对象速查](./wiki/architecture/core-objects-cheatsheet.md)
-
-## 适合继续补充的方向
-
-- 结合源码文件补充“类到流程”的映射表。
-- 把 ATSP、Nacos、Redis、MySQL 的边界职责单独拆页。
-- 给 v2 负载均衡补一张约束和故障回收清单。
