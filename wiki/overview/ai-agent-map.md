@@ -1,70 +1,70 @@
-# AI Agent Knowledge Map
+# AI Agent 知识地图
 
-## Core mental model
+## 核心心智模型
 
-An AI agent system in this vault can be read as four layers:
+在这个知识库里，一个 AI Agent 系统可以拆成四层：
 
-1. Model layer
-   - reasoning and generation
-2. Memory and context layer
-   - short-term context, retrieval, long-term notes
-3. Tool and execution layer
-   - APIs, browser control, coding tools, test runners
-4. Control layer
-   - Harness Engineering, rules, validation, permissions, review
+1. 模型层
+   - 负责推理与生成
+2. 记忆与上下文层
+   - 负责短期上下文、检索、长期知识
+3. 工具与执行层
+   - 负责 API、浏览器、命令行、测试工具等外部动作
+4. 控制层
+   - 负责 Harness Engineering、规则、验证、权限、评审
 
-## Main topics in this vault
+## 当前知识库的主要主题
 
 ### Agent
 
-- definition of an autonomous task-oriented system
-- four capabilities: perception, planning, action, memory
-- relation to RAG and workflow automation
+- 面向任务的自主系统定义
+- 四项核心能力：感知、规划、行动、记忆
+- 与 RAG、自动化工作流的关系
 
-See: [Agent](../concepts/agent.md)
+见：[Agent](../concepts/agent.md)
 
 ### Harness Engineering
 
-- how to keep agents readable, controllable, verifiable, and recoverable
-- emphasizes guardrails over prompt-only discipline
+- 如何让 Agent 可读、可控、可验证、可恢复
+- 强调硬约束与反馈回路，而不是只靠 prompt 自觉
 
-See: [Harness Engineering](../concepts/harness-engineering.md)
+见：[Harness Engineering](../concepts/harness-engineering.md)
 
-### Coding agents
+### 编程型 Agent
 
-- terminal-native assistants such as Claude Code
-- memory files, slash commands, project-level navigation
+- 以 Claude Code 这类终端原生助手为代表
+- 关注项目记忆文件、命令复用、项目级导航
 
-See: [Claude Code](../tools/claude-code.md)
+见：[Claude Code](../tools/claude-code.md)
 
-### Automation and testing
+### 自动化与测试
 
-- frameworks like OpenClaw illustrate execution reliability, logging, CI, and retries
-- useful as examples of verification-heavy agent workflows
+- OpenClaw 这类框架体现了执行可靠性、日志、CI、重试机制
+- 可以作为理解验证层与执行层的参考样本
 
-See: [OpenClaw](../tools/openclaw.md)
+见：[OpenClaw](../tools/openclaw.md)
 
-## Useful distinctions
+## 几组重要区分
 
 ### Agent vs RAG
 
-- RAG extends knowledge access.
-- Agent extends task execution.
-- RAG can be one tool inside an agent.
+- RAG 解决知识获取与事实增强。
+- Agent 解决任务执行与行动闭环。
+- RAG 常常只是 Agent 的一个工具。
 
-### Agent vs workflow automation
+### Agent vs 自动化工作流
 
-- Workflow automation is rule-first and fixed.
-- Agent systems are model-guided and adaptive.
-- In production, the best systems often combine both.
+- 自动化工作流更依赖固定规则。
+- Agent 系统更依赖模型驱动和动态决策。
+- 生产系统里通常是两者结合，而不是二选一。
 
 ### Prompt vs Context vs Harness
 
-- Prompt decides what you ask.
-- Context decides what the model sees.
-- Harness decides how the whole system is allowed to run.
+- Prompt 决定你如何提问。
+- Context 决定模型看见什么。
+- Harness 决定整个系统怎么被允许运行。
 
-## Reading path
+## 阅读路径
 
 1. [Agent](../concepts/agent.md)
 2. [Harness Engineering](../concepts/harness-engineering.md)

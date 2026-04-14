@@ -1,124 +1,124 @@
-# Knowledge Base Schema
+# 知识库 Schema
 
-This repository follows a three-layer knowledge workflow:
+本仓库采用三层知识流转结构：
 
 1. `raw/`
-   - Immutable source material.
-   - Contains clipped articles, notes, transcripts, PDFs converted to markdown, and other primary captures.
-   - Do not edit files in `raw/` unless the task is explicitly about source cleanup.
+   - 原始材料层。
+   - 存放裁剪文章、访谈记录、PDF 转 markdown、网页摘录、临时资料等。
+   - 默认不可修改，除非任务明确要求清洗原始材料。
 2. `wiki/`
-   - LLM-maintained knowledge layer.
-   - Stores distilled source pages, topic pages, synthesis notes, and practice guides.
-   - Each page should be updated incrementally instead of rewritten from scratch unless structure is broken.
-3. Root control files
-   - `index.md`: current map of the knowledge base.
-   - `log.md`: append-only activity log for ingestion, restructuring, and major edits.
+   - 由 LLM 维护的知识层。
+   - 存放来源页、主题页、综述页、实践页与长期可复用结论。
+   - 优先增量更新，而不是反复重写整页。
+3. 根目录控制文件
+   - `index.md`：当前知识库地图。
+   - `log.md`：追加式维护日志，记录摄取、重构与重要更新。
 
-## Core Rules
+## 核心规则
 
-- Treat `raw/` as the source of truth.
-- Write all derived understanding into `wiki/`.
-- Prefer one source page per raw file under `wiki/sources/`.
-- Prefer one durable concept/tool/practice page per topic under `wiki/`.
-- Preserve uncertainty. If a source is weak, promotional, or ambiguous, say so explicitly.
-- Do not duplicate long source excerpts. Summarize and link instead.
-- Update `index.md` whenever pages are added, removed, or reorganized.
-- Append a short entry to `log.md` for each meaningful ingestion or refactor.
+- 将 `raw/` 视为事实输入层。
+- 将提炼后的理解写入 `wiki/`。
+- 每个 `raw/` 文件优先对应一个 `wiki/sources/` 来源页。
+- 每个稳定主题优先对应一个长期维护的主题页。
+- 保留不确定性。如果来源有宣传性、模糊性或可靠性不足，要明确标注。
+- 不要在 wiki 中复制大段原文，优先摘要、归纳和链接。
+- 新增、删除或重组页面后必须更新 `index.md`。
+- 每次有意义的摄取或重构都要向 `log.md` 追加一条记录。
 
-## Page Types
+## 页面类型
 
 ### `wiki/sources/*.md`
 
-Use for source-grounded notes.
+用于来源导向笔记。
 
-Suggested structure:
+建议结构：
 
-- Title
-- Source metadata
-- Why it matters
-- Key points
-- Caveats
-- Related pages
+- 标题
+- 来源元信息
+- 为什么值得保留
+- 关键要点
+- 局限与 caveat
+- 相关页面
 
 ### `wiki/concepts/*.md`
 
-Use for stable concepts such as Agent, RAG, Harness Engineering, MCP.
+用于稳定概念，例如 Agent、RAG、Harness Engineering、MCP。
 
-Suggested structure:
+建议结构：
 
-- Definition
-- Core components
-- What it is not
-- Practical implications
-- Related tools or methods
-- Sources
+- 定义
+- 核心组成
+- 它不是什么
+- 实践含义
+- 相关工具或方法
+- 来源
 
 ### `wiki/tools/*.md`
 
-Use for specific products or frameworks.
+用于具体产品、框架或工具。
 
-Suggested structure:
+建议结构：
 
-- What it is
-- Core capabilities
-- Setup or usage patterns
-- Limits or risks
-- When to use
-- Sources
+- 它是什么
+- 核心能力
+- 使用方式
+- 限制与风险
+- 适用场景
+- 来源
 
 ### `wiki/overview/*.md`
 
-Use for maps, playbooks, synthesis notes, and vault-level guidance.
+用于地图页、综述页、实践页、导航页。
 
-Suggested structure:
+建议结构：
 
-- Goal
-- Scope
-- Recommended workflow
-- Reading paths
-- Links out to concept/tool/source pages
+- 目标
+- 范围
+- 推荐工作流
+- 阅读路径
+- 指向主题页、工具页、来源页的链接
 
-## Operating Modes
+## 运行模式
 
-### Ingest
+### 摄取 Ingest
 
-When new material appears in `raw/`:
+当 `raw/` 中新增材料时：
 
-1. Read the source.
-2. Create or update a page in `wiki/sources/`.
-3. Update affected topic pages in `wiki/concepts/`, `wiki/tools/`, or `wiki/overview/`.
-4. Update `index.md`.
-5. Append an entry to `log.md`.
+1. 阅读原始材料。
+2. 在 `wiki/sources/` 中创建或更新来源页。
+3. 更新相关主题页、工具页或综述页。
+4. 更新 `index.md`。
+5. 向 `log.md` 追加记录。
 
-### Query
+### 查询 Query
 
-When answering questions from this repository:
+当基于本仓库回答问题时：
 
-1. Prefer `wiki/` over `raw/`.
-2. If the answer requires fresh synthesis, write the durable result back into `wiki/`.
-3. If the answer depends on a weak source, mark that limitation.
+1. 优先检索 `wiki/`，而不是直接从 `raw/` 现读。
+2. 如果回答产生了可复用的新结论，要回写到 `wiki/`。
+3. 如果结论依赖弱来源，要明确说明限制。
 
-### Lint
+### 校验 Lint
 
-Before finishing a knowledge-base edit:
+完成一次知识库编辑前，检查：
 
-- Check that every new page has at least one inbound or outbound link.
-- Check that topic pages cite their source pages.
-- Check that `index.md` and `log.md` were updated.
-- Check that `raw/` was not modified unintentionally.
+- 每个新页面至少有一个入链或出链。
+- 主题页是否引用了对应来源页。
+- `index.md` 和 `log.md` 是否已更新。
+- `raw/` 是否被误修改。
 
-## Naming Conventions
+## 命名约定
 
-- Use lowercase kebab-case file names.
-- Keep titles human-readable inside the markdown body.
-- Prefer stable topical files over date-stamped duplicates.
+- 文件名使用小写 kebab-case。
+- 页面标题使用适合人阅读的中文。
+- 优先维护稳定主题文件，不要频繁生成日期型重复页。
 
-## Current Vault Focus
+## 当前知识库重点
 
-This vault currently emphasizes:
+本知识库当前聚焦：
 
-- Agent basics
+- Agent 基础概念
 - Harness Engineering
-- AI coding tools
-- Automated testing practice
-- Personal knowledge base workflows for AI-native learning
+- AI 编程工具
+- 自动化测试实践
+- 面向 AI 学习的个人知识库工作流
