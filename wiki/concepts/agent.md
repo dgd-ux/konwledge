@@ -1,75 +1,75 @@
 # Agent
 
-## Definition
+## 定义
 
-An agent is an AI system that can interpret goals, plan actions, use tools, and carry work forward with some degree of autonomy.
+Agent 是一种能够理解目标、规划步骤、调用工具并在一定自主性下推进任务的 AI 系统。
 
-Across the current sources, the most stable capability model is:
+结合当前知识库里的材料，最稳定的能力模型是四项：
 
-- perception
-- planning
-- action
-- memory
+- 感知
+- 规划
+- 行动
+- 记忆
 
-## Core components
+## 核心组成
 
-### Model
+### 模型
 
-Provides language understanding, reasoning, decomposition, and decision support.
+负责语言理解、推理、任务拆解与决策支持。
 
-### Tools
+### 工具
 
-Connect the model to external systems such as APIs, browsers, shells, test frameworks, and data stores.
+把模型连接到外部世界，例如 API、浏览器、命令行、测试框架和数据源。
 
-### Memory
+### 记忆
 
-- short-term memory: current task state and active context
-- long-term memory: reusable preferences, facts, and lessons
+- 短期记忆：保存当前任务状态和活跃上下文
+- 长期记忆：保存可复用偏好、事实和经验
 
-### Planning loop
+### 规划闭环
 
-The typical loop is:
+典型工作链路可以写成：
 
-`understand -> plan -> act -> observe -> adjust`
+`理解 -> 规划 -> 执行 -> 观察 -> 调整`
 
-## Agent vs plain chatbot
+## Agent 与普通聊天模型的区别
 
-A chatbot mainly answers.
+普通聊天模型主要负责回答问题。
 
-An agent is expected to:
+而 Agent 需要进一步做到：
 
-- break a task into steps
-- choose tools
-- execute against the environment
-- use feedback to continue or recover
+- 将任务拆成步骤
+- 选择和调度工具
+- 对环境执行动作
+- 根据反馈继续推进或修正
 
-## Agent vs RAG
+## Agent 与 RAG 的关系
 
-- RAG improves factual grounding.
-- Agent improves task completion.
-- RAG is often one subsystem of an agent rather than a replacement for it.
+- RAG 更偏知识增强与事实补充。
+- Agent 更偏任务执行与行动闭环。
+- 在很多系统里，RAG 只是 Agent 的一个子能力，而不是替代品。
 
-## Agent vs workflow automation
+## Agent 与自动化工作流的关系
 
-- Automation works best for deterministic branches.
-- Agents work best for ambiguous, changing, or multi-step work.
-- Practical systems often use deterministic workflows to constrain agent execution.
+- 自动化工作流更适合确定性分支。
+- Agent 更适合模糊、变化、多步骤任务。
+- 实际工程里，常常用固定工作流来约束 Agent 的执行边界。
 
-## Practical implications
+## 实践含义
 
-- Strong agent behavior is not only about the model.
-- Good tool design and control layers matter as much as raw intelligence.
-- Personal knowledge bases can serve as long-term memory for learning and implementation.
+- Agent 的效果不只取决于模型本身。
+- 工具设计、上下文设计和控制层设计同样关键。
+- 个人知识库可以承担 Agent 的长期记忆载体角色。
 
-## Related pages
+## 相关页面
 
-- [AI Agent Knowledge Map](../overview/ai-agent-map.md)
+- [AI Agent 知识地图](../overview/ai-agent-map.md)
 - [Harness Engineering](./harness-engineering.md)
 - [Claude Code](../tools/claude-code.md)
-- [Aliyun Agent Explained](../sources/aliyun-agent-explained.md)
-- [CSDN What Is Agent](../sources/csdn-what-is-agent.md)
+- [阿里云 Agent 综述](../sources/aliyun-agent-explained.md)
+- [CSDN 什么是 Agent](../sources/csdn-what-is-agent.md)
 
-## Sources
+## 来源
 
-- [Aliyun Agent Explained](../sources/aliyun-agent-explained.md)
-- [CSDN What Is Agent](../sources/csdn-what-is-agent.md)
+- [阿里云 Agent 综述](../sources/aliyun-agent-explained.md)
+- [CSDN 什么是 Agent](../sources/csdn-what-is-agent.md)

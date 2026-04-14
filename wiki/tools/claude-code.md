@@ -1,49 +1,49 @@
 # Claude Code
 
-## What it is
+## 它是什么
 
-Claude Code is a terminal-native coding assistant positioned as a project-level development tool rather than a file-level autocomplete tool.
+Claude Code 是一种终端原生的 AI 编程助手，定位更接近项目级开发工具，而不是文件级补全工具。
 
-## Core capabilities
+## 核心能力
 
-- natural language to code generation
-- debugging from error messages
-- repository navigation and explanation
-- command execution and file editing
-- support for custom commands and MCP integrations
+- 自然语言生成代码
+- 基于报错进行调试修复
+- 仓库导航与结构解释
+- 执行命令与修改文件
+- 支持自定义命令与 MCP 扩展
 
-## Useful usage patterns
+## 值得保留的使用模式
 
-### Project memory
+### 项目记忆
 
-Use a project memory file such as `CLAUDE.md` or, in a broader agent workflow, `AGENTS.md`.
+使用 `CLAUDE.md` 或更通用的 `AGENTS.md` 作为项目记忆文件，让工具理解项目规则和上下文。
 
-### Complex task mode
+### 复杂任务模式
 
-Use plan-first workflows for larger changes so that research, execution, and verification do not collapse into one step.
+面对复杂改动时，优先采用先计划后执行的模式，避免研究、实施、验证混成一步。
 
-### Reusable commands
+### 命令复用
 
-Custom slash commands are useful for repeatable review or maintenance flows.
+把高频评审或维护流程沉淀成自定义斜杠命令，可以明显提升重复工作的效率。
 
-## Limits and risks
+## 限制与风险
 
-- powerful action capabilities require clear boundaries
-- convenience does not replace testing and review
-- long-context support helps, but does not eliminate the need for structure
+- 动作能力越强，越需要清晰边界
+- 方便不等于可以替代测试和评审
+- 长上下文有帮助，但并不能替代结构化知识管理
 
-## How it connects to this vault
+## 它与本知识库的关系
 
-Claude Code is relevant here for two reasons:
+Claude Code 在这里有两个意义：
 
-- it is an example of an agentic coding interface
-- its memory and workflow patterns are directly useful when designing a personal AI-native knowledge system
+- 它是编程型 Agent 的代表工具之一
+- 它的项目记忆与工作流设计，正好能迁移到个人 AI 知识库实践中
 
-## Related pages
+## 相关页面
 
 - [Harness Engineering](../concepts/harness-engineering.md)
-- [Aliyun Claude Code Guide](../sources/aliyun-claude-code-guide.md)
+- [阿里云 Claude Code 指南](../sources/aliyun-claude-code-guide.md)
 
-## Sources
+## 来源
 
-- [Aliyun Claude Code Guide](../sources/aliyun-claude-code-guide.md)
+- [阿里云 Claude Code 指南](../sources/aliyun-claude-code-guide.md)

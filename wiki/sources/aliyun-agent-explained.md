@@ -1,33 +1,33 @@
-# Source Note: Aliyun Agent Explained
+# 来源笔记：阿里云 Agent 综述
 
-## Metadata
+## 元信息
 
-- Raw file: `raw/aliyun-agent-explained.md`
-- Original source: https://developer.aliyun.com/article/1714491
-- Published: 2026-03-04 16:07:05
+- 原始文件：`raw/aliyun-agent-explained.md`
+- 原文链接：https://developer.aliyun.com/article/1714491
+- 发布时间：2026-03-04 16:07:05
 
-## Why it matters
+## 为什么值得保留
 
-This is a clean introductory source for the basic mental model of an agent:
+这是一篇比较清晰的 Agent 入门材料，适合用来建立基础心智模型：
 
-- what an agent is
-- core components
-- agent vs RAG
-- agent vs workflow automation
+- Agent 是什么
+- Agent 的核心组成
+- Agent 与 RAG 的关系
+- Agent 与自动化工作流的区别
 
-## Key points
+## 关键要点
 
-- An agent is framed as a system that can think, decide, act, and remember.
-- The article distinguishes low-code/no-code construction from developer-centric frameworks.
-- It presents an agent as a composition of model, tools, and reasoning pattern.
-- It clearly separates RAG from agent execution while showing how RAG can be a tool inside an agent.
+- 文中将 Agent 描述为能够思考、决策、行动、记忆的系统。
+- 它区分了低代码搭建路径与开发者框架路径。
+- 它把 Agent 解释成模型、工具和思考模式的组合。
+- 它明确区分了 RAG 与 Agent，同时指出 RAG 可以成为 Agent 的一个工具。
 
-## Caveats
+## 局限
 
-- It is an introductory overview, not a production design guide.
-- Framework examples are illustrative and not exhaustive.
+- 这是一篇入门综述，不是生产级设计指南。
+- 文中举的框架示例更偏说明性，不具备完整性。
 
-## Related pages
+## 相关页面
 
 - [Agent](../concepts/agent.md)
-- [AI Agent Knowledge Map](../overview/ai-agent-map.md)
+- [AI Agent 知识地图](../overview/ai-agent-map.md)

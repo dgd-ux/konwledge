@@ -1,33 +1,33 @@
-# Source Note: Aliyun Claude Code Guide
+# 来源笔记：阿里云 Claude Code 指南
 
-## Metadata
+## 元信息
 
-- Raw file: `raw/aliyun-claude-code-guide.md`
-- Original source: https://developer.aliyun.com/article/1705912
-- Published: 2026-01-13 17:47:14
+- 原始文件：`raw/aliyun-claude-code-guide.md`
+- 原文链接：https://developer.aliyun.com/article/1705912
+- 发布时间：2026-01-13 17:47:14
 
-## Why it matters
+## 为什么值得保留
 
-This source is useful as a workflow-oriented overview of Claude Code:
+这篇材料适合作为 Claude Code 的工作流型概览：
 
-- installation options
-- first-run auth flow
-- coding, debugging, and navigation scenarios
-- memory files, custom commands, and MCP extensions
+- 安装方式
+- 首次认证流程
+- 编码、调试、导航场景
+- 记忆文件、自定义命令与 MCP 扩展
 
-## Key points
+## 关键要点
 
-- Claude Code is positioned as a terminal-native development assistant.
-- The article stresses project-level understanding rather than simple code completion.
-- `CLAUDE.md` is presented as a project memory file, which is closely related to `AGENTS.md`-style coordination.
-- Custom commands and MCP connections are highlighted as force multipliers.
+- Claude Code 被定位为终端原生开发助手。
+- 文中强调它关注项目级理解，而不是简单代码补全。
+- `CLAUDE.md` 被当作项目记忆文件，这与 `AGENTS.md` 风格的方法高度相关。
+- 自定义命令和 MCP 被视为能力放大器。
 
-## Caveats
+## 局限
 
-- It is partly tutorial and partly advocacy.
-- Version-specific installation or product details may age quickly.
+- 这篇文章兼具教程与宣传属性。
+- 安装方式、版本细节和产品行为会随时间变化。
 
-## Related pages
+## 相关页面
 
 - [Claude Code](../tools/claude-code.md)
 - [Harness Engineering](../concepts/harness-engineering.md)

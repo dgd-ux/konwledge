@@ -1,80 +1,80 @@
 # Harness Engineering
 
-## Definition
+## 定义
 
-Harness Engineering is the engineering discipline of making agent systems readable, controllable, verifiable, and recoverable.
+Harness Engineering 是一套让 Agent 系统变得可读、可控、可验证、可恢复的工程方法。
 
-It focuses less on making the model smarter and more on making the system dependable.
+它的重点不是让模型更聪明，而是让整个系统更可靠。
 
-## Three pillars
+## 三根支柱
 
-### Readability
+### 可读性
 
-Agents need explicit project-facing documentation such as `AGENTS.md`, stable directory structure, and clear completion criteria.
+Agent 需要清晰读取项目规则、目录结构与完成标准，因此需要类似 `AGENTS.md` 这样的显式说明文件。
 
-### Defensive control
+### 防御性控制
 
-Important constraints should be enforced by execution rules, not only by prompts.
+关键约束应当写进执行规则，而不是只写在 prompt 里。
 
-Typical controls:
+典型控制包括：
 
-- phased execution
-- permission boundaries
-- mandatory verification after edits
-- loop detection
+- 分阶段执行
+- 权限边界
+- 修改后强制验证
+- 循环失败检测
 
-### Feedback loops
+### 反馈回路
 
-A strong system validates results and feeds failure back into future runs.
+一个稳健系统不仅要验证结果，还要把失败经验反馈到后续运行中。
 
-Typical loops:
+典型反馈包括：
 
 - lint
-- tests
+- test
 - typecheck
 - review
 - lessons learned
 
-## Prompt vs Context vs Harness
+## Prompt、Context、Harness 的区别
 
-- Prompt: how the task is asked
-- Context: what the model can see
-- Harness: how the system governs action
+- Prompt：你怎么提问
+- Context：模型能看见什么
+- Harness：系统如何约束和治理行动
 
-## Why it matters
+## 为什么重要
 
-Many agent failures are not reasoning failures alone. They are failures of environment design:
+很多 Agent 失败并不只是推理能力不足，而是运行环境设计失败：
 
-- premature claims of completion
-- repeated failed actions
-- context drift on long tasks
-- rule violations under pressure
+- 提前宣称完成
+- 重复执行失败动作
+- 长任务中上下文漂移
+- 压力下违反规则
 
-## Minimal practical implementation
+## 最小可用实践
 
-For a small team or personal setup, a minimal harness can already be useful:
+对个人或小团队来说，一个最小版 harness 已经很有价值：
 
-1. maintain `AGENTS.md`
-2. require verification after edits
-3. separate execution from review
-4. record recurring mistakes
-5. keep handoff notes for long tasks
+1. 维护 `AGENTS.md`
+2. 修改后强制验证
+3. 将执行与评审拆开
+4. 记录重复错误
+5. 为长任务保留交接摘要
 
-## Relevance to this vault
+## 与本知识库的关系
 
-This knowledge base itself uses a lightweight harness:
+这个知识库本身就使用了一个轻量 harness：
 
-- `raw/` is immutable
-- `wiki/` stores durable synthesis
-- `index.md` and `log.md` keep structure and history visible
-- `AGENTS.md` constrains future maintenance
+- `raw/` 不动
+- `wiki/` 负责长期沉淀
+- `index.md` 和 `log.md` 让结构与历史可见
+- `AGENTS.md` 约束未来维护行为
 
-## Related pages
+## 相关页面
 
-- [Personal Knowledge Base Practice](../overview/personal-knowledge-base-practice.md)
+- [个人知识库实践](../overview/personal-knowledge-base-practice.md)
 - [Agent](./agent.md)
-- [CSDN Harness Engineering Practice](../sources/csdn-harness-engineering-practice.md)
+- [CSDN Harness Engineering 实践](../sources/csdn-harness-engineering-practice.md)
 
-## Sources
+## 来源
 
-- [CSDN Harness Engineering Practice](../sources/csdn-harness-engineering-practice.md)
+- [CSDN Harness Engineering 实践](../sources/csdn-harness-engineering-practice.md)
