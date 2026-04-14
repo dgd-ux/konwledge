@@ -1,28 +1,28 @@
-# Source Note: Baidu OpenClaw Guide
+# 来源笔记：百度 OpenClaw 指南
 
-## Metadata
+## 元信息
 
-- Raw file: `raw/baidu-openclaw-guide.md`
-- Original source: https://developer.baidu.com/article/detail.html?id=6355838
-- Published: 2026-04-03T09:39:19Z
+- 原始文件：`raw/baidu-openclaw-guide.md`
+- 原文链接：https://developer.baidu.com/article/detail.html?id=6355838
+- 发布时间：2026-04-03T09:39:19Z
 
-## Why it matters
+## 为什么值得保留
 
-This source is useful as a catalogue of practical reliability techniques from automation engineering.
+这篇材料适合作为自动化工程可靠性技巧清单。
 
-## Key points
+## 关键要点
 
-- Environment isolation and dependency pinning are treated as baseline setup.
-- Stable execution depends on locator strategy, data-driven tests, and dynamic waits.
-- Scaling depends on parallel execution, reports, and CI integration.
-- Reliability depends on logging, retries, monitoring, and controlled failure handling.
+- 环境隔离和依赖锁定被视为基础配置。
+- 稳定执行依赖定位策略、数据驱动测试与动态等待。
+- 扩展能力依赖并行执行、测试报告和 CI 集成。
+- 可靠性依赖日志、重试、监控和受控失败处理。
 
-## Caveats
+## 局限
 
-- The article makes quantitative performance claims that should be treated as illustrative.
-- It is focused on testing automation, not directly on agent systems.
+- 文中带有一些量化提升结论，应当视为说明性而非严格验证结果。
+- 它主要讨论测试自动化，而不是直接讨论 Agent 系统。
 
-## Related pages
+## 相关页面
 
 - [OpenClaw](../tools/openclaw.md)
 - [Harness Engineering](../concepts/harness-engineering.md)

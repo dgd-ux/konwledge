@@ -1,32 +1,32 @@
-# Source Note: CSDN What Is Agent
+# 来源笔记：CSDN 什么是 Agent
 
-## Metadata
+## 元信息
 
-- Raw file: `raw/csdn-what-is-agent.md`
-- Original source: https://blog.csdn.net/javatiange/article/details/150948161
-- Published: 2025-08-28T14:04:31+08:00
+- 原始文件：`raw/csdn-what-is-agent.md`
+- 原文链接：https://blog.csdn.net/javatiange/article/details/150948161
+- 发布时间：2025-08-28T14:04:31+08:00
 
-## Why it matters
+## 为什么值得保留
 
-This source expands the agent concept into a four-capability model:
+这篇材料把 Agent 展开成一个四能力模型：
 
-- perception
-- planning
-- action
-- memory
+- 感知
+- 规划
+- 行动
+- 记忆
 
-## Key points
+## 关键要点
 
-- The article contrasts agents with chat-only models.
-- It emphasizes multi-modal perception, dynamic planning, tool use, and long-term memory.
-- It frames protocols such as MCP and systems such as RAG as enablers of action and memory.
+- 文中把 Agent 和只会聊天的模型做了明确区分。
+- 它强调多模态感知、动态规划、工具调用和长期记忆。
+- 它把 MCP、RAG 等机制放进了行动能力和记忆能力的语境里。
 
-## Caveats
+## 局限
 
-- The article mixes educational explanation with promotional content.
-- Some examples and model references should be treated as directional rather than authoritative.
+- 文章中混有科普和宣传内容。
+- 一些模型举例与趋势判断更适合作为方向参考，而不是权威结论。
 
-## Related pages
+## 相关页面
 
 - [Agent](../concepts/agent.md)
-- [AI Agent Knowledge Map](../overview/ai-agent-map.md)
+- [AI Agent 知识地图](../overview/ai-agent-map.md)
