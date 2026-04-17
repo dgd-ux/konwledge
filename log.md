@@ -1,6 +1,6 @@
 # 知识库日志
 
-## 2026-04-14
+## 2026-04-16
 
 - 基于 Karpathy 风格的 `raw/wiki/schema` 框架初始化知识库结构。
 - 新增 `AGENTS.md`、`index.md`、`log.md`。
